@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - COPACI Granjas Guadalupe</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO PRINCIPAL Y NAVEGACIÓN -->
+    <header class="main-header">
+        <div class="logo-container">
+            <h1>COPACI Granjas Guadalupe</h1>
+            <p>Sistema de Gestión Ciudadana</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CUERPO PRINCIPAL DE LA PÁGINA -->
+    <main class="container">
+        <!-- Sección de Bienvenida / Acceso -->
+        <section id="inicio" class="hero-section">
+            <h2>Acceso al Portal Comunitario</h2>
+            <p>Plataforma digital para la gestión eficiente de solicitudes ciudadanas, reportes vecinales y avisos oficiales de nuestra comunidad.</p>
+        </section>
+
+        <!-- Formulario de Inicio de Sesión Estilizado con tus Tarjetas -->
+        <div class="card-grid" style="display: flex; justify-content: center; margin-bottom: 2rem;">
+            <div class="card" style="max-width: 450px; width: 100%; border-top: 4px solid #1b3b6f;">
+                <h4 style="color: #1b3b6f; margin-bottom: 1rem; font-size: 1.2rem;">Credenciales de Acceso</h4>
+                <p style="font-size: 0.95rem; color: #555555; margin-bottom: 1.5rem;">Ingresa tu usuario y contraseña institucional para acceder al sistema.</p>
+                
+                <form id="login-form">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="usuario" style="display: block; font-weight: 600; margin-bottom: 0.4rem; font-size: 0.9rem; color: #333;">Usuario:</label>
+                        <input type="text" id="usuario" required placeholder="Ej. admin" style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 1rem;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="password" style="display: block; font-weight: 600; margin-bottom: 0.4rem; font-size: 0.9rem; color: #333;">Contraseña:</label>
+                        <input type="password" id="password" required placeholder="********" style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 1rem;">
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; cursor: pointer;">Entrar al Sistema</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <p>&copy; 2026 COPACI Granjas Guadalupe. Sistema de Gestión Ciudadana desarrollado por Ituriel Tzadkiel Aldama Martinez.</p>
+        <p>Contacto oficial: atencion@copacigranjasguadalupe.gob</p>
+    </footer>
+
+    <!-- Script de validación de usuario -->
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const user = document.getElementById('usuario').value;
+            const pass = document.getElementById('password').value;
+
+            // Usuario y contraseña predeterminados (puedes cambiarlos)
+            if (user === "admin" && pass === "admin123") {
+                alert("¡Bienvenido al sistema! Redirigiendo al catálogo de trámites.");
+                window.location.href = "portal.html";
+            } else {
+                alert("Usuario o contraseña incorrectos. (Prueba con usuario: admin y contraseña: admin123)");
+            }
+        });
+    </script>
+</body>
+</html>

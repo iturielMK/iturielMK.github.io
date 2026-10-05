@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión Ciudadana COPACI Granjas Guadalupe</title>
+    <!-- Enlace a hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO PRINCIPAL Y NAVEGACIÓN -->
+    <header class="main-header">
+        <div class="logo-container">
+            <h1>COPACI Granjas Guadalupe</h1>
+            <p>Sistema de Gestión Ciudadana</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#tramites">Trámites</a></li>
+                <li><a href="#avisos">Avisos</a></li>
+                <li><a href="index.html" id="nav-salir" style="color: #ff6b6b;">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CUERPO PRINCIPAL DE LA PAGINA -->
+    <main class="container">
+        
+        <!-- Sección de Bienvenida -->
+        <section id="inicio" class="hero-section">
+            <h2>Bienvenido al Portal Comunitario</h2>
+            <p>Plataforma digital para la gestión eficiente de solicitudes ciudadanas, reportes vecinales y avisos oficiales de nuestra comunidad.</p>
+            <!-- Botón principal con función interactiva -->
+            <button class="btn-primary" id="btn-iniciar">Iniciar Trámite General</button>
+        </section>
+
+        <!-- Sección de Tarjetas de Trámites -->
+        <section id="tramites" class="services-section">
+            <h3>Trámites y Servicios Frecuentes</h3>
+            
+            <div class="card-grid">
+                <!-- Artículo de Trámite 1 -->
+                <article class="card">
+                    <h4>Reporte de Alumbrado</h4>
+                    <p>Solicita la reparación o mantenimiento de luminarias públicas dañadas en tu calle o privada.</p>
+                    <button class="btn-secondary" data-tramite="Reporte de Alumbrado">Solicitar</button>
+                </article>
+
+                <!-- Artículo de Trámite 2 -->
+                <article class="card">
+                    <h4>Seguridad Vecinal</h4>
+                    <p>Inscríbete a los programas de vigilancia comunitaria y alertas tempranas de la zona.</p>
+                    <button class="btn-secondary" data-tramite="Seguridad Vecinal">Consultar</button>
+                </article>
+
+                <!-- Artículo de Trámite 3 -->
+                <article class="card">
+                    <h4>Mantenimiento de Vialidades</h4>
+                    <p>Reporta baches, fugas de agua o problemas en el pavimento de Granjas Guadalupe.</p>
+                    <button class="btn-secondary" data-tramite="Mantenimiento de Vialidades">Reportar</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Barra Lateral de Avisos y Comunicados -->
+        <aside id="avisos" class="notice-aside">
+            <h3>Avisos Importantes</h3>
+            <ul>
+                <li><strong>Asamblea General:</strong> Próximo domingo a las 10:00 AM en el módulo del COPACI.</li>
+                <li><strong>Corte de Agua Programado:</strong> Mantenimiento en la red general este miércoles.</li>
+                <li><strong>Jornada de Vacunación:</strong> Sábado próximo en el centro comunitario.</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="main-footer">
+        <p>&copy; 2026 COPACI Granjas Guadalupe. Sistema de Gestión Ciudadana desarrollado por Ituriel Tzadkiel Aldama Martinez.</p>
+        <p>Contacto oficial: atencion@copacigranjasguadalupe.gob</p>
+    </footer>
+
+    <!-- Enlace al archivo de funcionalidad JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

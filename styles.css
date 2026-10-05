@@ -1,0 +1,182 @@
+/* ESTILOS GLOBALES Y RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ESTILOS DEL ENCABEZADO Y NAVEGACIÓN */
+.main-header {
+    background-color: #1b3b6f; /* Azul institucional */
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo-container p {
+    font-size: 0.9rem;
+    color: #d1d8e0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover, 
+.main-nav a.active {
+    color: #64dfdf;
+}
+
+/* CONTENEDOR PRINCIPAL Y SECCIONES (MAIN) */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: #1b3b6f;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0f2744;
+}
+
+/* ESTILOS DE TARJETAS DE TRÁMITES (CARDS) */
+.services-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1b3b6f;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-top: 4px solid #1b3b6f;
+}
+
+.card h4 {
+    margin-bottom: 0.5rem;
+    color: #1b3b6f;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 1rem;
+}
+
+.btn-secondary {
+    background-color: #e4e7eb;
+    color: #333333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+/* BARRA LATERAL DE AVISOS (ASIDE) */
+.notice-aside {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.notice-aside h3 {
+    color: #856404;
+    margin-bottom: 0.75rem;
+}
+
+.notice-aside ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.notice-aside li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* PIE DE PAGINA (FOOTER) */
+.main-footer {
+    background-color: #212529;
+    color: #adb5bd;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.main-footer p {
+    margin-bottom: 0.25rem;
+}
